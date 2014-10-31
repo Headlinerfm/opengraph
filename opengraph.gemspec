@@ -39,32 +39,12 @@ Gem::Specification.new do |s|
   s.summary = %q{A very simple Ruby library for parsing Open Graph prototocol information from websites.}
   s.test_files = [
     "spec/opengraph_spec.rb",
-     "spec/spec_helper.rb"
+    "spec/spec_helper.rb"
   ]
 
-  if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
-    s.specification_version = 3
-
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<hashie>, [">= 0"])
-      s.add_runtime_dependency(%q<nokogiri>, ["~> 1.5.0"])
-      s.add_runtime_dependency(%q<rest-client>, ["~> 1.6.0"])
-      s.add_development_dependency(%q<rspec>, [">= 1.2.9"])
-      s.add_development_dependency(%q<webmock>, [">= 0"])
-    else
-      s.add_dependency(%q<hashie>, [">= 0"])
-      s.add_dependency(%q<nokogiri>, ["~> 1.4.0"])
-      s.add_dependency(%q<rest-client>, ["~> 1.6.0"])
-      s.add_dependency(%q<rspec>, [">= 2.0.0"])
-      s.add_dependency(%q<webmock>, [">= 0"])
-    end
-  else
-    s.add_dependency(%q<hashie>, [">= 0"])
-    s.add_dependency(%q<nokogiri>, ["~> 1.4.0"])
-    s.add_dependency(%q<rest-client>, ["~> 1.6.0"])
-    s.add_dependency(%q<rspec>, [">= 1.2.9"])
-    s.add_dependency(%q<webmock>, [">= 0"])
-  end
+  s.add_runtime_dependency(%q<hashie>, ["~> 3"])
+  s.add_runtime_dependency(%q<nokogiri>, ["~> 1.5.0"])
+  s.add_runtime_dependency(%q<rest-client>, ["~> 1.6"])
+  s.add_development_dependency(%q<rspec>, ["~> 3.0"])
+  s.add_development_dependency(%q<webmock>, ["~> 1"])
 end
-
