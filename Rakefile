@@ -14,3 +14,8 @@ RSpec::Core::RakeTask.new(:spec) do |t|
 end
 
 task :default => :spec
+
+desc 'Open irb session with gem'
+task :console do
+  sh "irb -rubygems -I lib -r ging-opengraph.rb"
+end
