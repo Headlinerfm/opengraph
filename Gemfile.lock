@@ -2,9 +2,9 @@ PATH
   remote: .
   specs:
     ging-opengraph (0.0.5)
-      hashie
+      hashie (~> 3)
       nokogiri (~> 1.5.0)
-      rest-client (~> 1.6.0)
+      rest-client (~> 1.6)
 
 GEM
   remote: http://www.rubygems.org/
@@ -17,7 +17,6 @@ GEM
     json (1.8.1)
     mime-types (1.25.1)
     nokogiri (1.5.11)
-    rake (10.1.1)
     rdoc (4.1.2)
       json (~> 1.4)
     rest-client (1.6.8)
@@ -45,6 +44,5 @@ PLATFORMS
 
 DEPENDENCIES
   ging-opengraph!
-  rake (>= 10.0)
-  rspec (>= 2.0.0)
-  webmock
+  rspec (~> 3.0)
+  webmock (~> 1)
