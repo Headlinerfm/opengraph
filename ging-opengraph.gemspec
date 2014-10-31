@@ -41,4 +41,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency(%q<rest-client>, "~> 1.6")
   s.add_development_dependency(%q<rspec>, "~> 3.0")
   s.add_development_dependency(%q<webmock>, "~> 1")
+  s.add_development_dependency(%q<rake>, "~> 10")
 end
