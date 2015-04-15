@@ -1,5 +1,5 @@
-require 'rubygems'
-require 'rake'
+require "bundler/gem_tasks"
+
 begin
   require 'bundler/setup'
 rescue LoadError

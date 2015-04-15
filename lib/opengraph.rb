@@ -1,6 +1,7 @@
 require 'hashie'
 require 'nokogiri'
 require 'restclient'
+require 'opengraph/version'
 require 'opengraph/types'
 require 'opengraph/parser'
 require 'opengraph/object'
