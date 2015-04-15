@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = "1.8.12"
   s.summary = "A very simple Ruby library for parsing Open Graph prototocol information from websites."
 
-  s.add_runtime_dependency(%q<hashie>, "~> 3")
+  s.add_runtime_dependency(%q<hashie>, ">= 1")
   s.add_runtime_dependency(%q<nokogiri>, "~> 1.5")
   s.add_runtime_dependency(%q<rest-client>, "~> 1.6")
   s.add_development_dependency(%q<rspec>, "~> 3.0")
