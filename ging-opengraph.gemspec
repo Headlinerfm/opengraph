@@ -1,7 +1,6 @@
 # -*- encoding: utf-8 -*-
 $LOAD_PATH.push File.expand_path('../lib', __FILE__)
 require 'opengraph/version'
-require 'rake'
 
 Gem::Specification.new do |s|
   s.name = 'ging-opengraph'
@@ -17,7 +16,7 @@ Gem::Specification.new do |s|
     "LICENSE",
     "README.rdoc"
   ]
-  s.files = FileList['lib/**/*.rb', '[A-Z]*']
+  s.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   s.homepage = "http://github.com/ging/opengraph"
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.12"
